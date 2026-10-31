@@ -29,9 +29,9 @@ task_firewall() {
   # Nextcloud Talk (only when video calling is on): TURN/STUN + relay range
   # (talk.$DOMAIN must stay DNS-only).
   if [ "${MOD_CLOUD:-false}" = "true" ] && [ "${VIDEO_CALLING:-true}" != "false" ]; then
-    ufw allow 3478/udp >/dev/null 2>&1
-    ufw allow 3478/tcp >/dev/null 2>&1
-    ufw allow 5349/tcp >/dev/null 2>&1
+    ufw allow 3481/udp >/dev/null 2>&1
+    ufw allow 3481/tcp >/dev/null 2>&1
+    ufw allow 5351/tcp >/dev/null 2>&1
     ufw allow 49160:49200/udp >/dev/null 2>&1
     ufw allow 49160:49200/tcp >/dev/null 2>&1
   fi

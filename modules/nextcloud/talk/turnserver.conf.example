@@ -7,8 +7,8 @@
 # Nextcloud (Talk mints per-session TURN credentials from it).
 # TLS reuses the talk.{{DOMAIN}} LE cert Caddy issues via DNS-01 (mounted from
 # caddy_data at /caddy:ro, same pattern as the mailserver).
-listening-port=3478
-tls-listening-port=5349
+listening-port=3481
+tls-listening-port=5351
 realm={{DOMAIN}}
 fingerprint
 use-auth-secret
